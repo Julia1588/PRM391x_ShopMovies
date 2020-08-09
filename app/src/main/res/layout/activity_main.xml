@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#15C618"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Movies"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@id/header">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#15C618"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/moviesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Movies"
+            android:layout_marginLeft="40dp"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="#129514"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/profileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Profile"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="#129514"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>
